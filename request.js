@@ -579,7 +579,7 @@ Request.prototype.init = function (options) {
     }
 
     self.ntick = true
-  })
+  }, self.runImmediate)
 }
 
 Request.prototype.getNewAgent = function () {
